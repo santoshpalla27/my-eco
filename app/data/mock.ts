@@ -42,7 +42,7 @@ export const CATEGORIES: Category[] = [
   {
     id: 'photo-frames',
     name: 'Photo Frames',
-    image: 'https://images.unsplash.com/photo-1513519245088-0e12902e35ca?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: 'uv-acrylic',
@@ -73,7 +73,7 @@ export const PRODUCTS: Product[] = [
     name: 'Classic Wooden Photo Frame',
     price: 599,
     rating: 4.9,
-    image: 'https://images.unsplash.com/photo-1513519245088-0e12902e35ca?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&q=80&w=800',
     category: 'photo-frames',
     description:
       'Handcrafted from premium oak wood, this timeless photo frame adds warmth to any space. Each frame is finished with a natural matte coat to preserve the beauty of your cherished memory.',
@@ -298,7 +298,7 @@ export const PRODUCTS: Product[] = [
     name: 'Executive Branded Desk Set',
     price: 1999,
     rating: 4.5,
-    image: 'https://images.unsplash.com/photo-1513201099705-a9746bab22b3?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=800',
     category: 'corporate-gifts',
     description:
       'A sophisticated desk set featuring a personalised metal nameplate, pen stand, and a custom photo frame — all branded with your company logo. Perfect for employee recognition and client gifts.',

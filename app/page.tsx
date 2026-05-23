@@ -12,7 +12,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-[320px] md:h-[460px] flex items-center justify-center text-center px-4">
         <Image
-          src="https://images.unsplash.com/photo-1513519245088-0e12902e35ca?auto=format&fit=crop&q=80&w=2000"
+          src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&q=80&w=2000"
           alt="Personalised gifts and photo frames"
           fill
           className="object-cover"
