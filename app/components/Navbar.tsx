@@ -39,8 +39,8 @@ export default function Navbar() {
   const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/products', label: 'Shop' },
-    { href: '/products?category=women', label: 'Women' },
-    { href: '/products?category=men', label: 'Men' },
+    { href: '/how-it-works', label: 'How It Works' },
+    { href: '/corporate', label: 'Corporate Gifts' },
   ];
 
   return (
@@ -51,7 +51,7 @@ export default function Navbar() {
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link href="/" className="text-xl font-bold tracking-tighter" onClick={() => setMobileOpen(false)}>
-                AURA
+                GiftCraft
               </Link>
             </div>
 

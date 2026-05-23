@@ -11,8 +11,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "AURA | Premium Ecommerce",
-  description: "High-end minimalist ecommerce store",
+  title: "GiftCraft | Personalised Gifts & Photo Frames",
+  description: "Create personalised photo frames, UV acrylic prints, metal prints, and unique gifts. Turn your memories into beautiful keepsakes — crafted with love.",
 };
 
 export default function RootLayout({
