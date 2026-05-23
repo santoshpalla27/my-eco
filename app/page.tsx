@@ -4,12 +4,12 @@ import { CATEGORIES, PRODUCTS } from "./data/mock";
 import ProductCard from "./components/ProductCard";
 
 export default function Home() {
-  const featuredProducts = PRODUCTS.slice(0, 5); // Ensure up to 5
+  const featuredProducts = PRODUCTS.filter((p) => p.isFeatured);
 
   return (
     <main className="flex-1 w-full flex flex-col">
       {/* Hero Section */}
-      <section className="relative h-[400px] flex items-center justify-center text-center px-4">
+      <section className="relative min-h-[320px] md:h-[440px] flex items-center justify-center text-center px-4">
         <Image
           src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&q=80&w=2000"
           alt="Hero Fashion"
@@ -26,7 +26,10 @@ export default function Home() {
             Discover our latest collection of premium basics.
           </p>
           <div className="flex justify-center pt-2">
-            <Link href="/products" className="bg-white text-black h-10 px-6 rounded-lg font-semibold hover:bg-gray-100 transition-colors flex items-center justify-center text-sm shadow">
+            <Link
+              href="/products"
+              className="bg-white text-black h-10 px-6 rounded-lg font-semibold hover:bg-gray-100 transition-colors flex items-center justify-center text-sm shadow"
+            >
               Shop Now
             </Link>
           </div>
@@ -52,9 +55,13 @@ export default function Home() {
       <section className="py-8 bg-gray-50 w-full border-t border-gray-100">
         <div className="max-w-6xl mx-auto px-4 lg:px-6">
           <h2 className="text-xl font-bold tracking-tight mb-6">Shop by Category</h2>
-          <div className="flex overflow-x-auto pb-4 gap-4 -mx-4 px-4 lg:mx-0 lg:px-0">
-            {CATEGORIES.map(category => (
-              <Link key={category.id} href={`/products?category=${category.id}`} className="group relative w-32 h-40 md:w-40 md:h-48 flex-shrink-0 overflow-hidden rounded-lg shadow-sm border border-gray-100">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {CATEGORIES.map((category) => (
+              <Link
+                key={category.id}
+                href={`/products?category=${category.id}`}
+                className="group relative h-40 md:h-52 overflow-hidden rounded-lg shadow-sm border border-gray-100"
+              >
                 <Image
                   src={category.image}
                   alt={category.name}
